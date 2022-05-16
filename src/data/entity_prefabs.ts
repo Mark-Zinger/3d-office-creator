@@ -5,7 +5,7 @@ const entity_prefabs: Record<string, GamePrefab> = {
     "office_desk": {
         name: "Офисный стол",
         description: "Стол для организации рабочего места сотрудников.",
-        gltf_path: "office_desk.glb",
+        gltf_path: "/assets/office_desk.glb",
         children_container: {
             is_horizontal: true,
             args: [1.55,0.65],
@@ -15,7 +15,7 @@ const entity_prefabs: Record<string, GamePrefab> = {
     "office_printer": {
         name: "Офисный принтер",
         description: "Стандартный принтер для офиса.",
-        gltf_path: "office_printer.glb",
+        gltf_path: "/assets/office_printer.glb",
     }
 }
 

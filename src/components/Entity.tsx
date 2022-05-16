@@ -5,7 +5,7 @@ import {FC} from "react";
 import EntityTree from "./EntityTree";
 
 
-const assets_api_path = '/assets/'
+
 
 
 const Entity = (props: GameEntity) => {
@@ -18,7 +18,7 @@ const Entity = (props: GameEntity) => {
     console.log({prefab_id})
 
     const { children_container=false } = prefab;
-    const {scene} = useGLTF(assets_api_path + prefab.gltf_path);
+    const {scene} = useGLTF(prefab.gltf_path);
 
     return (
         <group>

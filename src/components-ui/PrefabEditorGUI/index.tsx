@@ -15,7 +15,7 @@ import {useForm} from "react-hook-form";
 import FormInput from "../FormComponents/FormInput";
 import FormCheckbox from "../FormComponents/FormCheckbox";
 import {useEffect} from "react";
-import FormVectorInput from "../FormComponents/FormVectorInput";
+import FormVecorInput from "../FormComponents/FormVecorInput";
 
 
 function PrefabEditorGUI () {
@@ -35,7 +35,7 @@ function PrefabEditorGUI () {
         <FormInput control={control} name="description" label="Описание" multiline rows={4}/>
         <FormCheckbox control={control} name="is_active" label="Активная" />
 
-        <FormVectorInput/>
+        <FormVecorInput/>
         <input type="submit" value="Save"/>
       </form>
       <Button>Загрузить модель</Button>

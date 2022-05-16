@@ -61,6 +61,8 @@ function loadModelUtil(fileMap: Map<string,File>) {
         .setCrossOrigin('anonymous')
         .setDRACOLoader( DRACO_LOADER )
 
+      blobURLs.forEach(URL.revokeObjectURL);
+
 
       loader.load(url, (gltf) => {
 
@@ -75,7 +77,6 @@ function loadModelUtil(fileMap: Map<string,File>) {
         }
 
 
-        blobURLs.forEach(URL.revokeObjectURL);
         cleanup();
 
         // See: https://github.com/google/draco/issues/349

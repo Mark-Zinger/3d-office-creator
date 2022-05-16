@@ -1,0 +1,16 @@
+.formVectorInput {
+  display: flex;
+  justify-content: space-between;
+
+  label {
+    display: block;
+    flex-grow: 1;
+  }
+
+  &__input-group {
+    display: flex;
+  }
+  &__input {
+    width: 20%;
+  }
+}
