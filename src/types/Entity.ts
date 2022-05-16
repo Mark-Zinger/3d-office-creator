@@ -1,10 +1,12 @@
 import Collider from "./Collider";
 import ChildrenContainer from "./ChildrenContainer";
 import ArrayVector3 from "./ArrayVector3";
+import {RequireOnlyOne} from "./RequireOnlyOne";
 
-export interface GameEntity extends GameRootEntity {
+export interface GameEntityWithOutPrefub extends GameRootEntity {
 
-    prefab_id: string;
+    prefab_id?: string;
+    prefab?: GamePrefab;
     position: [number, number];
     rotation: number;
 
@@ -12,7 +14,9 @@ export interface GameEntity extends GameRootEntity {
     colors?: { [key: string]: any };
 };
 
-export interface GameEntityPrefab {
+export type GameEntity = RequireOnlyOne<GameEntityWithOutPrefub, 'prefab' | 'prefab_id'>
+
+export interface GamePrefab {
 
     name: string;
     description?: string;

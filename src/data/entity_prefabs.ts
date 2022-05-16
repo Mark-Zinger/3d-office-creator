@@ -1,7 +1,7 @@
-import {GameEntityPrefab} from "../types/Entity";
+import {GamePrefab} from "../types/Entity";
 
 
-const entity_prefabs: Record<string, GameEntityPrefab> = {
+const entity_prefabs: Record<string, GamePrefab> = {
     "office_desk": {
         name: "Офисный стол",
         description: "Стол для организации рабочего места сотрудников.",

@@ -7,10 +7,11 @@ import EntityTree from "./EntityTree";
 
 const assets_api_path = '/assets/'
 
+
 const Entity = (props: GameEntity) => {
     const { prefab_id, id } = props
 
-    const prefab = entity_prefabs[prefab_id];
+    const prefab = props.prefab || entity_prefabs[prefab_id as string];
 
     const { is_horizontal=true } = prefab;
 
