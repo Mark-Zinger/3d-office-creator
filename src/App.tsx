@@ -19,7 +19,7 @@ function App() {
       <Router>
           <Routes>
               <Route path="/" element={<Game/>} />
-              <Route path="/entity_prefabs/:id" element={<PrefabEditor/>} />
+              <Route path="/prefabs/:id" element={<PrefabEditor/>} />
               <Route path="*" element={<Navigate to ="/" />}/>
           </Routes>
       </Router>

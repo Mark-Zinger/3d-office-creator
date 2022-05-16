@@ -1,6 +1,6 @@
 import {Suspense} from 'react';
 import GridHelper from "./GridHelper";
-import {OrbitControls} from "@react-three/drei";
+import {Html, OrbitControls} from "@react-three/drei";
 import {store} from "../app/store";
 import {Provider} from "react-redux";
 import Canvas from "./Canvas";

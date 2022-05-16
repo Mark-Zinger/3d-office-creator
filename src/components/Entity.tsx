@@ -12,9 +12,7 @@ const Entity = (props: GameEntity) => {
 
     const prefab = entity_prefabs[prefab_id];
 
-    const {
-        is_horizontal=true
-    } = prefab;
+    const { is_horizontal=true } = prefab;
 
     console.log({prefab_id})
 

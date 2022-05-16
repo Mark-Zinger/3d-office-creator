@@ -1,6 +1,7 @@
 import Canvas from "./Canvas";
-import {Box} from "@react-three/drei";
+import {Box, OrbitControls} from "@react-three/drei";
 import {useParams} from "react-router-dom";
+import PrefabEditorGUI from "../components-ui/PrefabEditorGUI";
 
 
 const PrefabEditor = () => {
@@ -9,9 +10,13 @@ const PrefabEditor = () => {
     // console.log( id );
 
     return (
-        <Canvas>
-            <Box/>
-        </Canvas>
+        <div style={{display: "flex", height: "100%"}}>
+            <Canvas>
+                <OrbitControls/>
+                <Box/>
+            </Canvas>
+            <PrefabEditorGUI/>
+        </div>
     )
 }
 
